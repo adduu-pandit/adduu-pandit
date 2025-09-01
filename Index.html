@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adesh Pandey - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("https://picsum.photos/1200/800") no-repeat center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      background: #00b4d8;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0077b6;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0077b6;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #023e8a;
+      color: white;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Hi, I'm <span style="color:#00b4d8;">Adesh Pandey</span></h1>
+    <p>Web Developer | Freelancer | Learner</p>
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="#projects" class="btn">See Projects</a>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I'm <b>Adesh Pandey</b>, a web developer passionate about building modern, responsive, and user-friendly websites. I love learning coding and helping businesses go online.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+       
+        <li>Excel Expet</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>Portfolio Website (this one!)</li>
+        <li>Business Website for Coaching Institute</li>
+        <li>Personal Blog Website</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Me</h2>
+      <p>📧 Email: <a href="adduupandit@gmail.com">adduupandit@gmail.com</a></p>
+      <p>📱 Phone: +91-8858821164</p>
+      <p>🔗 LinkedIn: <a href="www.instagram.com">linkedin.com/in/adeshpandey</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Adesh Pandey | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
